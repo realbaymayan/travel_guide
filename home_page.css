@@ -1,28 +1,23 @@
 body{
-    margin: 0px;
-    background-color: #393E46;
+    margin: 0;
+    background-color: rgb(16, 65, 65);
+    
 }
 /***************************************************************************** HEADER BAŞLANGIÇ ****************************************************************************************/
 header{
-    background-color: #393E46;
+    position: absolute;
     width: 100%;
     height: 65px;
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 10px;
+    z-index: 3;
+    top: 0;
 }
 .logocon{
     flex:1;
     display: flex;
     flex-direction: row;
     text-align: center;    
-}
-.logo{
-    height: 64px;
-    width: 64px;
-    float: left;
-    align-items: center;
-    display: block;
 }
 .logo-text{
     height: 64;
@@ -88,15 +83,80 @@ header{
 /************************************************************************* HEADER BİTİŞ ****************************************************************************************/
 
 /************************************************************************* MAIN BAŞLANGIÇ ****************************************************************************************/
+/**
+ * Tabs
+ */
+ .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+    width: 75%;
+    max-width: 850px;
+    height: 150px;
+    transform: translate(0%,70%);
+
+}
+.tabs label {
+    order: 1;
+    display: block;
+    padding: 0.7rem 2rem;
+    margin-right: 0.2rem;
+    width: auto;
+    cursor: pointer;
+    background: #90caf9;
+    opacity: 1;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    height: 120px;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0px 25px 25px 25px;
+}
+.tabs input[type="radio"] {
+    display: none;
+}
+.tabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+
+/**
+ * Generic Styling
+*/
+/* body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+} */
+
 .main-welcome{
-    
-    position: relative;
+    position:relative;
     height: 75vh;
     width: auto;
-    border-radius: 20px;
-    margin: 30px 30px 30px 30px;
+    /* border-radius: 20px; */
     background-color: black;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .main-welcome img{
@@ -108,7 +168,6 @@ header{
     left: 0;
     opacity: 0.7;
     transition: opacity 0.2s ease-out;
-    border-radius: 20px;
 }
 
 .main-welcome h1{
@@ -129,7 +188,7 @@ header{
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-bottom: 67px;
+    padding-bottom: 62px;
 }
 .main-welcome h3{
     color: white;
@@ -141,14 +200,18 @@ header{
     left: 0;
 }
 .cards{
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 45px;
     flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
-    margin: 15px;
-    width: 100%;
+    margin: 0px 15px 15px 15px ;
+    width:400px;
     height: 37rem;
     border-radius: 10px;
     overflow: hidden;
@@ -164,7 +227,7 @@ header{
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 1;
     transition: opacity 0.2s ease-out;
 }
 .card h2 {
@@ -184,6 +247,7 @@ header{
 }
 .card p {
     inset: auto auto 80px 30px;
+    font-size: 17px;
 }
 .card a {
     inset: auto auto 40px 30px;
@@ -205,5 +269,74 @@ header{
 .material-symbols-outlined {
     vertical-align: middle;
 }
+.populer-text h2{
+    color: whitesmoke;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+}
+/************************************************************************* FOOTER BAŞLANGIÇ ****************************************************************************************/
 
-  
+.footer{
+    /* width: 100%;
+    height: 25vh;
+    background-color: #222831;
+    margin-top: 15px;
+    color: white;
+    display: flex; */
+    margin-top: 15px;
+    padding: 10px 20vh;
+    background: #333;
+    color: #efefef;
+    display: flex;
+
+}
+.footer div{
+    text-align: center;
+
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+form input{
+    width: 43vh;
+    height: 5vh;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icon{
+    margin-top: 30px;
+
+}
+.social-icon i {
+    font-size: 22px;
+    color: whitesmoke;
+    margin: 10px;
+    cursor: pointer;
+}
