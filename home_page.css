@@ -100,15 +100,16 @@ header{
     order: 1;
     display: block;
     padding: 0.7rem 2rem;
-    margin-right: 0.2rem;
+    margin-right: 0.1rem;
     width: auto;
     cursor: pointer;
-    background: #90caf9;
+    background: white;
+    color: orange;
     opacity: 1;
     font-weight: bold;
     transition: background ease 0.2s;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .tabs .tab {
     order: 99;
@@ -117,14 +118,14 @@ header{
     height: 120px;
     display: none;
     padding: 1rem;
-    background: #fff;
+    background: gainsboro;
     border-radius: 0px 25px 25px 25px;
 }
 .tabs input[type="radio"] {
     display: none;
 }
 .tabs input[type="radio"]:checked + label {
-    background: #fff;
+    background: gainsboro;
 }
 .tabs input[type="radio"]:checked + label + .tab {
     display: block;
