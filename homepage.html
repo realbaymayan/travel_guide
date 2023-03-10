@@ -13,53 +13,113 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/201/201623.png" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/931374c19d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <div class="main-welcome">
           <header>
-            <div class="signinup">
-                <div class="btn-sign-in">
-                    <a href="login.html">Giriş Yap</a>
-                </div>
-                <div class="btn-sign-up">
-                    <a href="">Kayıt Ol</a>
-                </div>
-            </div>
+            <ul>
+              <li>
+                <a href="">HOME</a>
+                <a href="#popular-places">POPULAR PLACES</a>
+                <a href="">OTELS</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="login-btn" >LOG IN</a>
+              </li>
+            </ul>
             <div class="logocon">
-               
                 <div class="logo-text">
                     <a href="">Travel <span style="color: #eee;">Guide</span></a>
                 </div>
             </div>
         </header>
-            <img src="images/halic.jpg" alt="">
+            <video autoplay loop muted plays-inline >
+              <source src="videos/video3.mp4" type="video/mp4">
+            </video>
             <div class="tabs">
-              <input type="radio" name="tabs" id="tabone" checked="checked">
-              <label for="tabone">One Way</label>
-              <div class="tab">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              
-              <input type="radio" name="tabs" id="tabtwo">
-              <label for="tabtwo">Round Trip</label>
-              <div class="tab">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              
-              <input type="radio" name="tabs" id="tabthree">
-              <label for="tabthree">Multi City</label>
-              <div class="tab">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
+              <h1>
+                It's a Big World Out <br> There, Go Explore.
+              </h1>
             </div>
         </div>
-        
+        <div class="provide-text-box">
+          <h1 id="popular-places" class="provide-text">What We Provide?</h1>
+        </div>
+        <div class="provide-boxes">
+          <div class="provide-box">
+            <div class="provide-car-img">
+              <i class="fa-solid fa-car"></i>
+              <div class="provide-car-title">
+                Pickup Cars
+              </div>
+              <div class="provide-car-text">
+                We provide airport or <br>
+                destination pickup services <br>
+                for all our customers.
+              </div>
+            </div>
+          </div>
+          <div class="provide-box">
+            <div class="provide-car-img">
+              <i class="fa-solid fa-ship"></i>
+              <div class="provide-car-title">
+                Cruise Services
+              </div>
+              <div class="provide-car-text">
+                We also provide additional <br>
+                cruise services for our <br>
+                customers.
+              </div>
+            </div>
+          </div>
+          <div class="provide-box">
+            <div class="provide-car-img">
+              <i class="fa-solid fa-utensils"></i>
+              <div class="provide-car-title">
+                Free Meals
+              </div>
+              <div class="provide-car-text">
+                We offer complementary <br>
+                free breakfast and dinner <br>
+                for our customers.
+              </div>
+            </div>
+          </div>
+          <div class="provide-box">
+            <div class="provide-car-img">
+              <i class="fa-solid fa-plane-departure"></i>
+              <div class="provide-car-title">
+                Fly In Comforts
+              </div>
+              <div class="provide-car-text">
+                We provide on the go.<br>
+                round the clock flight <br>
+                services for our customers.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-places-text-box">
+          <h1 id="popular-places" class="top-places-text">Popular Places</h1>
+        </div>
         <div class="cards">
             <div class = "card">
                 <img src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/ngt_we_bistanbul_gettyimages-668990458_hr.jpg?w=1600&h=900" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      5/5
+                  </h1>
                   <h2>
                     Türkiye
                   </h2>
@@ -77,6 +137,14 @@
               <div class = "card">
                 <img src="https://static.saltinourhair.com/wp-content/uploads/2018/07/23104015/paris-city-trip-eiffel-tower.jpg" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                       5/5
+                  </h1>
                   <h2>
                     Fransa
                   </h2>
@@ -94,6 +162,14 @@
               <div class = "card">
                 <img src="https://mediap.flypgs.com/awh/2500/1619//files/ulkeler/Almanya/berlin-almanya.jpg" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                       5/5
+                  </h1>
                   <h2>
                     ALMANYA
                   </h2>
@@ -111,6 +187,14 @@
               <div class = "card">
                 <img src="https://i2.wp.com/edukas.com.tr/blog/wp-content/uploads/2022/08/ingiltere-universite.jpg?fit=1000%2C669&ssl=1" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                       4/5
+                  </h1>
                   <h2>
                     İNGİLTERE
                   </h2>
@@ -128,6 +212,14 @@
               <div class = "card">
                 <img src="https://www.flypgs.com/blog/wp-content/uploads/2022/03/kuzey-italya-da-gorulmesi-gereken-yerler.jpg" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                       5/5
+                  </h1>
                   <h2>
                     İtalya
                   </h2>
@@ -145,6 +237,15 @@
               <div class = "card">
                 <img src="https://www.etextilemagazine.com/wp-content/uploads/2019/07/ispanya.png" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                       4/5
+                  </h1>
                   <h2>
                     İspanya
                   </h2>
@@ -162,6 +263,15 @@
               <div class = "card">
                 <img src="https://i2.milimaj.com/i/milliyet/75/1200x675/5f52215f554287190c2d981f.jpg" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                       4/5
+                  </h1>
                   <h2>
                     Avusturya
                   </h2>
@@ -179,6 +289,13 @@
               <div class = "card">
                 <img src="https://www.avrupa.info.tr/sites/default/files/styles/standard_page_header/public/2016-10/Croatia%20Pula.jpg?itok=IMdYiOdt" alt="">
                 <div class="card-content">
+                  <h1>
+                    <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                  </h1>
                   <h2>
                     Hırvatistan
                   </h2>
@@ -195,7 +312,7 @@
               </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="col-1">
         <h3>USEFUL LINKS</h3>
         <a href="#">About</a>
@@ -204,7 +321,7 @@
         <a href="#">Business Partners</a>
       </div>
       <div class="col-2">
-        <h3>NEWSLETTER</h3>
+        <h3>HABER BÜLTENİ</h3>
         <form>
           <input type="email" placeholder="Your Email Adress" required>
           <br>
@@ -226,4 +343,12 @@
       </div>
     </footer>
 </body>
+<script>
+  const cards = document.querySelector('.cards');
+
+cards.addEventListener('wheel', function(e) {
+  e.preventDefault();
+  cards.scrollLeft += e.deltaY;
+});
+</script>
 </html>
