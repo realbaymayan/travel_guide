@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
+<head onload="window.location.href='homepage.html'">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
             <ul>
               <li>
                 <a href="">HOME</a>
-                <a href="#popular-places">POPULAR PLACES</a>
+                <a href="#popular-place">POPULAR PLACES</a>
                 <a href="">OTELS</a>
                 <a href="#contact">CONTACT US</a>
                 <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
@@ -46,6 +46,80 @@
               <h1>
                 It's a Big World Out <br> There, Go Explore.
               </h1>
+              <div class="ticket">
+                <div class="ticket-list">
+                 <div class="ticket-text__wrapper">
+                  <span class="ticket-title">Country</span>
+                  <span class="ticket-subtitle">Italy</span>
+                 </div>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <path d="m6 9 6 6 6-6" />
+                 </svg>
+                </div>
+                <div class="ticket-list">
+                 <div class="ticket-text__wrapper">
+                  <span class="ticket-title">City</span>
+                  <span class="ticket-subtitle">Roma</span>
+                 </div>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <path d="m6 9 6 6 6-6" />
+                 </svg>
+                </div>
+                <div class="ticket-list">
+                 <div class="ticket-text__wrapper">
+                  <span class="ticket-title">Departing</span>
+                  <span class="ticket-subtitle">19 June</span>
+                 </div>
+                 <svg class="returning" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-switch-horizontal" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="16 3 20 7 16 11" />
+                  <line x1="10" y1="7" x2="20" y2="7" />
+                  <polyline points="8 13 4 17 8 21" />
+                  <line x1="4" y1="17" x2="13" y2="17" />
+                 </svg>
+                 </svg>
+                </div>
+                <div class="ticket-list depart">
+                 <div class="ticket-text__wrapper">
+                  <span class="ticket-title">Returning</span>
+                  <span class="ticket-subtitle">27 June</span>
+                 </div>
+                 </svg>
+                </div>
+                <div class="ticket-list">
+                 <div class="ticket-text__wrapper">
+                  <span class="ticket-title">Travelers</span>
+                  <span class="ticket-subtitle">2 Adults</span>
+                 </div>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <path d="m6 9 6 6 6-6" />
+                 </svg>
+                 </svg>
+                </div>
+                <div class="ticket-list">
+                 <svg class="settings" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="14" cy="6" r="2" />
+                  <line x1="4" y1="6" x2="12" y2="6" />
+                  <line x1="16" y1="6" x2="20" y2="6" />
+                  <circle cx="8" cy="12" r="2" />
+                  <line x1="4" y1="12" x2="6" y2="12" />
+                  <line x1="10" y1="12" x2="20" y2="12" />
+                  <circle cx="17" cy="18" r="2" />
+                  <line x1="4" y1="18" x2="15" y2="18" />
+                  <line x1="19" y1="18" x2="20" y2="18" />
+                 </svg>
+                 </svg>
+                 </svg>
+                </div>
+                <div class="search">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <circle cx="10" cy="10" r="7" />
+               <line x1="21" y1="21" x2="15" y2="15" />
+             </svg>
+                </div>
+               </div>
             </div>
         </div>
         <div class="provide-text-box">
@@ -176,7 +250,7 @@
         </div>
         <!-- ***************************************************************** Special Offers Bitiş *************************************************************** -->
         <div class="top-places-text-box">
-          <h1 id="popular-places" class="top-places-text">Popular Places</h1>
+          <h1 id="popular-place" class="top-places-text">Popular Places</h1>
         </div>
         <div class="cards">
             <div class = "card">
@@ -191,7 +265,7 @@
                       5/5
                   </h1>
                   <h2>
-                    Türkiye
+                    Turkey
                   </h2>
                   <p>
                     Türkiye veya resmî adıyla Türkiye Cumhuriyeti, topraklarının büyük bölümü Anadolu'da, küçük bir bölümü ise Balkan Yarımadası'nın güneydoğu uzantısı olan Trakya'da yer alan kıtalararası bir ülkedir.
@@ -391,7 +465,7 @@
         <a href="#">Business Partners</a>
       </div>
       <div class="col-2">
-        <h3>HABER BÜLTENİ</h3>
+        <h3>NEWSLATTER</h3>
         <form>
           <input type="email" placeholder="Your Email Adress" required>
           <br>

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
     margin: 0;
-    /* background-color: rgb(16, 65, 65); */
-    /* background-color: #e1bf92; */
     background-color: #333;
     overflow: overlay;
 }
@@ -89,49 +87,16 @@ header a.login-btn{
  .tabs {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     z-index: 3;
     width: 75%;
     max-width: 850px;
     height: 150px;
     transform: translate(0%,70%);
     margin-bottom: 45vh;
+    justify-content: center;
+}
 
-
-}
-.tabs label {
-    order: 1;
-    display: block;
-    padding: 0.7rem 2rem;
-    margin-right: 0.1rem;
-    width: auto;
-    cursor: pointer;
-    background: white;
-    color: orange;
-    opacity: 1;
-    font-weight: bold;
-    transition: background ease 0.2s;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.tabs .tab {
-    order: 99;
-    flex-grow: 1;
-    width: 100%;
-    height: 120px;
-    display: none;
-    padding: 1rem;
-    background: gainsboro;
-    border-radius: 0px 25px 25px 25px;
-}
-.tabs input[type="radio"] {
-    display: none;
-}
-.tabs input[type="radio"]:checked + label {
-    background: gainsboro;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-    display: block;
-}
 .main-welcome{
     position:relative;
     height: 100vh;
@@ -148,6 +113,68 @@ header a.login-btn{
     height: 100%;
     opacity: 0.7;
     transition: opacity 0.2s ease-out;
+}
+
+.ticket {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin-top: 30vh;
+    border-radius: 12px;
+    color:white;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.ticket-list {
+    display: flex;
+    padding: 10px 14px;
+}
+.ticket-list + .ticket-list {
+    border-left: 1px solid #fdfdfe;
+    padding-left: 16px;
+}
+.ticket-list.depart {
+    border-left: 0;
+}
+.ticket .returning {
+    margin-left: 32px;
+}
+.ticket-text__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.ticket-title {
+    font-size: 12px;
+}
+.ticket-subtitle {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 4px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+.ticket svg {
+    width: 20px;
+    margin-left: 60px;
+    color: white;
+}
+.ticket .settings {
+    margin: 0;
+}
+.ticket .search {
+    background-color: #00ADB5;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 12px 12px 0;
+}
+.ticket .search svg {
+    margin: 0;
+    width: 20px;
 }
 /************************************************************************** BAŞLIKLAR BAŞLANGIÇ *************************************************************  */
 .top-places-text{
@@ -170,7 +197,6 @@ header a.login-btn{
     width: 100%;
     font-weight: bold;
     font-family: sans-serif;
-    /* margin-left: 7vh; */
     text-align: center;
 }
 .provide-text-box{
@@ -183,6 +209,7 @@ header a.login-btn{
 .main-welcome h1{
     color: white;
     font-size: 70px;
+    width: 100%;
     margin: auto;
 }
 .main-welcome h2{
@@ -389,7 +416,7 @@ header a.login-btn{
     border: 2px solid white;
     color: white;
     font-family: sans-serif;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-right: 1vh;
     height: 4vh;
     width: 16vh;
@@ -424,7 +451,7 @@ header a.login-btn{
 .footer{
     margin-top: 15px;
     padding: 25px 0;
-    width: 90%;
+    width: 100%;
     background: #333;
     color: #efefef;
     display: flex;
