@@ -424,6 +424,11 @@ header a.login-btn{
     top: 1;
     right: 0;
 }
+.special-offers-buttons a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
 .price-text{
     display: flex;
     align-items: center;
