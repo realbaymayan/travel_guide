@@ -13,4 +13,3 @@
 ![GitHub](images/site2.png)
 ## My Social Media Accounts
 ## [Linkedin](https://www.linkedin.com/in/umut-yavuz-732106255/) - [Patika.dev](https://app.patika.dev/realbaymayan)
-<img src="images/linkedin.svg" width="50" height="50" color="white">
